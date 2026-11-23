@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "repo_name": "szl-data-core",
+    "last_audit_date": "2026-11-23",
+    "loop_level": 1
+  },
+  "estate_context": {
+    "purpose_domain": "Pure-stdlib Python SQLite (WAL) data layer for the SZL Holdings / a11oy governed-AI estate, with entities and receipt-verified storage, intended to replace the Snowflake dependency.",
+    "baseline_commit": "5ebdc7231bec80a9100590eb3c2634f1fa8d7cf0",
+    "leader_profiles": [
+      {
+        "name": "sqlite (assigned szl-data-core domain leader)",
+        "url": "https://github.com/sqlite/sqlite",
+        "checked_date": "2026-11-23"
+      }
+    ]
+  },
+  "evidence_index": {
+    "publications": [
+      {
+        "id": "github:sqlite/sqlite",
+        "link": "https://github.com/sqlite/sqlite",
+        "applicability": "Assigned canonical data-layer leader (SQLite/WAL) relevant to the pure-stdlib SQLite data layer."
+      }
+    ],
+    "gap_register": [
+      "The L1 inventory contains four files: LICENSE, README.md, datacore.py, and selftest.py; pyproject=False, so no pyproject.toml is present.",
+      "tests_dir=False, so no test directory is present; the top-level test-related file is selftest.py.",
+      "workflows_measured=[]; no CI workflows exist.",
+      "Recent commit history supplied contains 5ebdc72 (szl-data-core v0: selftest, README, Apache-2.0 LICENSE (#1)) and 7e2d13c (Add datacore.py (szl-data-core v0 landing))."
+    ],
+    "prioritized_changes": [
+      "Add a pyproject.toml to address the measured pyproject=False packaging gap.",
+      "Add a dedicated test directory to address the measured tests_dir=False gap.",
+      "Add a CI workflow to address the measured absence of CI workflows."
+    ]
+  },
+  "execution_trace": {}
+}
